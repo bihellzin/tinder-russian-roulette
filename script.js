@@ -1,6 +1,6 @@
-var like = document.querySelectorAll(".button")[2]
-var dislike = document.querySelectorAll(".button")[0]
-var info = document.getElementsByClassName("P(0) Trsdu($normal) Sq(28px) Bdrs(50%) Cur(p) Ta(c) Scale(1.2):h Mb(12px) Mb(8px)--s focus-button-style")[1]
+var like_button = document.querySelectorAll(".button")[2]
+var dislike_button = document.querySelectorAll(".button")[0]
+var info_button = document.getElementsByClassName("P(0) Trsdu($normal) Sq(28px) Bdrs(50%) Cur(p) Ta(c) Scale(1.2):h Mb(12px) Mb(8px)--s focus-button-style")[1]
 
 var likes = 0
 var dislikes = 3
@@ -22,7 +22,7 @@ function checkLikes(){
     enableDislikes()
     return false
   }
-  like = document.querySelectorAll(".button")[2]
+  like_button = document.querySelectorAll(".button")[2]
   return true
 }
 
@@ -31,28 +31,28 @@ function checkDislikes(){
     enableLikes()
     return false
   }
-  dislike = document.querySelectorAll(".button")[0]
+  dislike_button = document.querySelectorAll(".button")[0]
   return true
 }
 
 function enableDislikes(){
   dislikes = 3
-  dislike.style=("display: block;")
-  like.style=("display: none;")
+  dislike_button.style=("display: block;")
+  like_button.style=("display: none;")
 }
 
 function enableLikes(){
   likes = 3
-  like.style=("display: block;")
-  dislike.style=("display: none;")
+  like_button.style=("display: block;")
+  dislike_button.style=("display: none;")
 }
 
-like.onclick = () => {
+like_button.onclick = () => {
   likes--
   checkLikes()
 }
 
-dislike.onclick = () => {
+dislike_button.onclick = () => {
   dislikes--
   checkDislikes()
 }

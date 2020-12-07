@@ -8,14 +8,14 @@ var dislikes = 3
 checkDislikes()
 checkLikes()
 
-info.onclick = () => {
-  checkDislikes()
-  checkDislikes()
-}
+// info.onclick = () => {
+//   checkDislikes()
+//   checkDislikes()
+// }
 
-if (backAppeared) {
-  back = document.getElementsByClassName("End(12px) B(-20px) Pos(a) Z(2) CenterAlign Bdrs(50%) P(0) Scale(1.1):h Trsdu($normal) focus-button-style")[0]
-}
+// if (backAppeared) {
+//   back = document.getElementsByClassName("End(12px) B(-20px) Pos(a) Z(2) CenterAlign Bdrs(50%) P(0) Scale(1.1):h Trsdu($normal) focus-button-style")[0]
+// }
 
 function checkLikes(){
   if (likes == 0){
